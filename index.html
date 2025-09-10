@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Profesional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/vista.css">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Mi<span>Portafolio</span></div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hola, soy <span style="color: var(--color-acento)">Sebastian</span></h1>
+                <p>Desarrollador Web | Analista de Sistemas | Desarrollador SQL</p>
+                <div class="hero-btns">
+                    <a href="#proyectos" class="btn">Ver mis proyectos</a>
+                    <a href="#contacto" class="btn secondary">Contactarme</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="CV/foto cv.jpg" alt="Tu Nombre">
+                </div>
+                <div class="about-text">
+                    <h3>Desarrollador y Diseñador Web</h3>
+                    <p>Ing. en Tecnologías de la información con experiencia como: Analista y programador especializado en bases de datos relacionales, con experiencia en diseño, optimización y mantenimiento de sistemas SQL. Destaco por mi enfoque metódico, capacidad de resolución de problemas y habilidad para integrar soluciones técnicas con objetivos estratégicos. Manejo de SQL Server, MySQL y conocimientos en PostgreSQL. Apasionado por la mejora continua, la seguridad de datos y la automatización de procesos.</p>
+                    <p>Mi enfoque combina creatividad, funcionalidad y resultados medibles. Me mantengo siempre actualizado con las últimas tendencias y tecnologías para ofrecer lo mejor.</p>
+                    
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-name">
+                                <span>Desarrollo de Software</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skill-name">
+                                <span>Diseño UX/UI</span>
+                                <span>80%</span>
+                                </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skill-name">
+                                <span>Desarrollo de Proyectos</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="CV/Sebastian Soto Ponce.pdf" class="btn">Descargar CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 class="section-title">Mis Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Desarrollo de Sistemas</h3>
+                    <p>Creación de sitios web responsivos, aplicaciones web y comercios electrónicos con las últimas tecnologías.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Diseño UX/UI</h3>
+                    <p>Diseño de interfaces intuitivas y atractivas centradas en la experiencia del usuario y la usabilidad.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Desarrollo de Proyectos</h3>
+                    <p>Estrategias con metodologías Agiles, SCRUM, CASCADA y gestión de proyectos de inicio a fin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Proyectos -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="diseno">Diseño</button>
+                <button class="filter-btn" data-filter="marketing">Proyectos</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80" alt="Proyecto 1" class="project-img">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Sitios Web</h3>
+                        <p class="project-desc">Desarrollo de Sitios Web con las tecnologías más recientes.</p>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="diseno">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1164&q=80" alt="Proyecto 2" class="project-img">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Diseño de sistemas</h3>
+                        <p class="project-desc">Diseño para mejorar la experiencia de usuario al llevar un control de inventarios.</p>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="marketing">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Proyecto 3" class="project-img">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Seguimiento de Proyectos</h3>
+                        <p class="project-desc">Estrategia para llevar a cabo proyetos de inicio a fin.</p>
+                        <a href="#" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Ponte en contacto</h3>
+                    <p>Estoy disponible para proyectos freelance y oportunidades de colaboración. ¡No dudes en contactarme!</p>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Orizaba, Veracruz</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>sebastian.sotop@outlook.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+52 272 109 8419</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="formContacto">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nombre completo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Asunto">
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Tu mensaje" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>Mi Portafolio</h3>
+                    <p>Desarrollador y diseñador web especializado en crear experiencias digitales excepcionales que generan resultados.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sebastian-soto-ponce-7876a217a/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Suscríbete</h3>
+                    <p>Mantente actualizado con mis últimos proyectos y noticias.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Mi Portafolio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Menu toggle para móviles
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+        
+        // Cerrar menú al hacer clic en un enlace (móviles)
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('nav ul').classList.remove('active');
+            });
+        });
+        
+        // Filtrado de proyectos
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Quitar clase active de todos los botones
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Añadir clase active al botón clickeado
+                this.classList.add('active');
+                
+                // Obtener el filtro
+                const filter = this.getAttribute('data-filter');
+                
+                // Mostrar/ocultar proyectos según el filtro
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Formulario de contacto
+        document.getElementById('formContacto').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu mensaje! Te contactaré pronto.');
+            this.reset();
+        });
+    </script>
+</html>
