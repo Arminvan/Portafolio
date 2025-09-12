@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Proyectos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="CSS/vista.css">
+  <link rel="stylesheet" href="CSS/diseño.css">
+</head>
+<body>
+  <header>
+<header>
+        <div class="container nav-container">
+            <div class="logo">Mi<span>Portafolio</span></div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html #sobre-mi">Sobre Mí</a></li>
+                    <li><a href="index.html #servicios">Servicios</a></li>
+                    <li><a href="index.html #proyectos">Proyectos</a></li>
+                    <li><a href="index.html #contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+  </header>
+
+  <section class="container1">
+    <br>
+    <br>
+        <div class="container">
+            <h2 class="section-title">Diseños de Interfaces</h2>
+        </div>
+    <div class="card-grid">
+      
+      <div class="card">
+        <img src="CV/Boceto.png" alt="Proyecto 1">
+        <div class="card-body">
+          <h3>App Tareas</h3>
+          <p>Diseño de una app para tareas interactivo.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="CV/bodeto1.png" alt="Proyecto 2">
+        <div class="card-body">
+          <h3>App de ejercicios</h3>
+          <p>Diseño y maquetación de un app de ejercicio.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="CV/bodeto2.png" alt="Proyecto 3">
+        <div class="card-body">
+          <h3>App para venta y promoción de tennis</h3>
+          <p>Optimizada para captar el interes de clientes y proveedores.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="CV/Figma.png" alt="Proyecto 4">
+        <div class="card-body">
+          <h3>Tarjetas de avisos dinamicos</h3>
+          <p>Tarjetas interactivas para avisos.</p>
+        </div>
+      </div>
+
+       <div class="card">
+        <img src="CV/Figma1.png" alt="Proyecto 4">
+        <div class="card-body">
+          <h3>Portafolio Personal</h3>
+          <p>Página web con diseño profesional y minimalista.</p>
+        </div>
+      </div>
+
+       <div class="card">
+        <img src="CV/Figma2.png" alt="Proyecto 4">
+        <div class="card-body">
+          <h3>App para esudiantes</h3>
+          <p>Diseño y maquetación de login para esudiantes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>Mi Portafolio</h3>
+                    <p>Desarrollador y diseñador web especializado en crear experiencias digitales excepcionales que generan resultados.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sebastian-soto-ponce-7876a217a/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Suscríbete</h3>
+                    <p>Mantente actualizado con mis últimos proyectos y noticias.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Mi Portafolio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Menu toggle para móviles
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+        
+        // Cerrar menú al hacer clic en un enlace (móviles)
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('nav ul').classList.remove('active');
+            });
+        });
+        
+        // Filtrado de proyectos
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Quitar clase active de todos los botones
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Añadir clase active al botón clickeado
+                this.classList.add('active');
+                
+                // Obtener el filtro
+                const filter = this.getAttribute('data-filter');
+                
+                // Mostrar/ocultar proyectos según el filtro
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        </script>
+</body>
+</html>
